@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1FB863E85E5BD6A568CC997 /* Pods_DogCRUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */; };
 		C2B0DE821F0C163300DF9983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0DE811F0C163300DF9983 /* AppDelegate.swift */; };
 		C2B0DE841F0C163300DF9983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0DE831F0C163300DF9983 /* ViewController.swift */; };
 		C2B0DE871F0C163300DF9983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B0DE851F0C163300DF9983 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogCRUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9426295BA7F44CF1C41BF715 /* Pods-DogCRUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCRUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD.debug.xcconfig"; sourceTree = "<group>"; };
+		9F72942CE970D95E462BC60F /* Pods-DogCRUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCRUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD.release.xcconfig"; sourceTree = "<group>"; };
 		C2B0DE7E1F0C163300DF9983 /* DogCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B0DE811F0C163300DF9983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B0DE831F0C163300DF9983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FB863E85E5BD6A568CC997 /* Pods_DogCRUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E795614DC381F5CBD134033 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9426295BA7F44CF1C41BF715 /* Pods-DogCRUD.debug.xcconfig */,
+				9F72942CE970D95E462BC60F /* Pods-DogCRUD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C2B0DE751F0C163300DF9983 = {
 			isa = PBXGroup;
 			children = (
 				C2B0DE801F0C163300DF9983 /* DogCRUD */,
 				C2B0DE7F1F0C163300DF9983 /* Products */,
+				9E795614DC381F5CBD134033 /* Pods */,
+				FD623F83A67DBC4122552FE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = DogCRUD;
 			sourceTree = "<group>";
 		};
+		FD623F83A67DBC4122552FE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2B0DE901F0C163300DF9983 /* Build configuration list for PBXNativeTarget "DogCRUD" */;
 			buildPhases = (
+				5897AB9B1B4641257C1326E2 /* [CP] Check Pods Manifest.lock */,
 				C2B0DE7A1F0C163300DF9983 /* Sources */,
 				C2B0DE7B1F0C163300DF9983 /* Frameworks */,
 				C2B0DE7C1F0C163300DF9983 /* Resources */,
+				84A52B3F66FD359AE2BE476A /* [CP] Embed Pods Frameworks */,
+				8569A8E8C416902097F16CE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5897AB9B1B4641257C1326E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84A52B3F66FD359AE2BE476A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8569A8E8C416902097F16CE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2B0DE7A1F0C163300DF9983 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		C2B0DE911F0C163300DF9983 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9426295BA7F44CF1C41BF715 /* Pods-DogCRUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B33RKQE9R2;
@@ -274,6 +350,7 @@
 		};
 		C2B0DE921F0C163300DF9983 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F72942CE970D95E462BC60F /* Pods-DogCRUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B33RKQE9R2;
