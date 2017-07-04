@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/MaisaMilena/nodeJS#readme",
   "dependencies": {
-    "express": "^4.15.3",
-    "sqlite3": "^3.1.8"
+    "express": "^4.15.3"
   }
 }
+
+
+
+

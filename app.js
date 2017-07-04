@@ -8,6 +8,7 @@ app.get('/', (req, res, err) => {
 	res.send('Servidor up')
 })
 
+// Chamada para selecionar todos os Dog via GET
 app.get('/dogs', (req, res, err) => {
 	database.getAllDogs((err, rows) => {
 		if (!err) {
@@ -20,25 +21,47 @@ app.get('/dogs', (req, res, err) => {
 
 })
 
-
-app.post('/', (req, res, err) => {
+// Chamada para insert em Dog via POST
+app.post('/dogs/insert', (req, res, err) => {
 
 	var dog = req.query
-	if (dog.name && dog.breed){
-		
-		database.insertDog(dog, (err) => {
+	database.insertDog(dog, (err) => {
 			if (!err) {
-				res.status(200).json(dog)
+				res.status(200)
+				res.send('Dog registrado com sucesso!')
 			} else {
 				res.status(400).json('Invalid insertion: '+ err)
 			}
-		})
-	} else {
-		
-	}
+	})
 
 })
 
+// Chamada para deletar um Dog via DELETE
+app.delete('/dogs/delete', (req, res, err) => {
+
+	var dogId = req.query
+	database.deleteDogById(id, (err) => {
+		if(!err) {
+			res.send('Doguinho de id '+dogID.id+ ' excluído')
+		} else {
+			res.status(400).json('Delete problem: '+err)
+		}
+	})
+})
+
+
+// Chamada para atualizar um Dog via POST
+app.post('/dogs/update', (req, res, err) => {
+
+	var dog = req.query
+	database.updateDogById(dog, (err) => {
+		if(!err) {
+			res.send('Doguinho de id '+dog.id+' atualizado')
+		} else {
+			res.status(400).json('Update problem: '+err)
+		}
+	})
+})
 
 
 
