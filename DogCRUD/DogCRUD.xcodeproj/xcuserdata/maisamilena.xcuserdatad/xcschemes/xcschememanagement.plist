@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DogCRUDWebSerive.xcscheme</key>
+		<key>DogCRUD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C2B0DE5F1F0C13B300DF9983</key>
+		<key>C2B0DE7D1F0C163300DF9983</key>
 		<dict>
 			<key>primary</key>
 			<true/>

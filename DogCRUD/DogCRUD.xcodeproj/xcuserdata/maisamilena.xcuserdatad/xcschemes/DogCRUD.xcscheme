@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C2516F7C1F06C8EE002BFB42"
-               BuildableName = "NodeJS.app"
-               BlueprintName = "NodeJS"
-               ReferencedContainer = "container:NodeJS.xcodeproj">
+               BlueprintIdentifier = "C2B0DE7D1F0C163300DF9983"
+               BuildableName = "DogCRUD.app"
+               BlueprintName = "DogCRUD"
+               ReferencedContainer = "container:DogCRUD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2516F7C1F06C8EE002BFB42"
-            BuildableName = "NodeJS.app"
-            BlueprintName = "NodeJS"
-            ReferencedContainer = "container:NodeJS.xcodeproj">
+            BlueprintIdentifier = "C2B0DE7D1F0C163300DF9983"
+            BuildableName = "DogCRUD.app"
+            BlueprintName = "DogCRUD"
+            ReferencedContainer = "container:DogCRUD.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2516F7C1F06C8EE002BFB42"
-            BuildableName = "NodeJS.app"
-            BlueprintName = "NodeJS"
-            ReferencedContainer = "container:NodeJS.xcodeproj">
+            BlueprintIdentifier = "C2B0DE7D1F0C163300DF9983"
+            BuildableName = "DogCRUD.app"
+            BlueprintName = "DogCRUD"
+            ReferencedContainer = "container:DogCRUD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C2516F7C1F06C8EE002BFB42"
-            BuildableName = "NodeJS.app"
-            BlueprintName = "NodeJS"
-            ReferencedContainer = "container:NodeJS.xcodeproj">
+            BlueprintIdentifier = "C2B0DE7D1F0C163300DF9983"
+            BuildableName = "DogCRUD.app"
+            BlueprintName = "DogCRUD"
+            ReferencedContainer = "container:DogCRUD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
