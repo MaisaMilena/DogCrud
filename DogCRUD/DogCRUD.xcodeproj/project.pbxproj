@@ -381,6 +381,7 @@
 				C2B0DE921F0C163300DF9983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
