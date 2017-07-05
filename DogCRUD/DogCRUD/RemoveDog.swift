@@ -8,6 +8,23 @@
 
 import UIKit
 
-class RemoveDog: NSObject {
+protocol RemoveDogPresenterDelegate {
+    func removeDogConcluido()
+    func removeDogFalhou(erro: String)
+    
+}
 
+
+class RemoveDog: NSObject, JsonLoaderDelegate {
+    
+    let url = "http://localhost:3000"
+    
+    
+    func loaderJsonConcluido(arrayDicionario: [NSDictionary]) {
+        
+    }
+    
+    func loaderJsonFalhou(mensagem: String) {
+        <#code#>
+    }
 }

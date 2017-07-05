@@ -10,7 +10,7 @@ import UIKit
 
 class AtualizarTableViewController: UITableViewController {
 
-    var idDog: Int
+    var idDog: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
