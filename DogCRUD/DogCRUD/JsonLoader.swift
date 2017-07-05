@@ -22,30 +22,28 @@ class JsonLoader: NSObject {
     // MARK: - Dados carregados
     var arrayDadosJSON : [NSDictionary]?
     
-    override init() {
-        print("🎈Entrou no JSONLoader")
-    }
-    
     public func carregarConteudoDaUrl(url:String){
-        print("🎈Entrou no Carregar URL")
+   
         Alamofire.request(url, method: .get).responseJSON { response in
             
             switch response.result {
             case .success:
                 self.arrayDadosJSON = response.result.value as! [NSDictionary]
-                //print(self.arrayDadosJSON)
                 break
             case .failure(let error):
+                print("🦊")
                 print(error)
                 break
             }
-            print("🎻")
-            print(self.arrayDadosJSON)
-            self.delegate?.loaderJsonConcluido(arrayDicionario: self.arrayDadosJSON!)
+
+            if self.arrayDadosJSON == nil {
+                print("🦊 Algum erro ocorreu, verifique o status do servidor")
+            } else {
+                self.delegate?.loaderJsonConcluido(arrayDicionario: self.arrayDadosJSON!)
+            }
+            
         }
-        
-        print("🎻🎻")
-        print(self.arrayDadosJSON)
+
     }
 
 }

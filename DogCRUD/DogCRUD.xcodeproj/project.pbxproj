@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1FB863E85E5BD6A568CC997 /* Pods_DogCRUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */; };
+		C21117401F0D2AA800CA7E24 /* Doge.png in Resources */ = {isa = PBXBuildFile; fileRef = C211173F1F0D2AA800CA7E24 /* Doge.png */; };
+		C21117421F0D2B7300CA7E24 /* DogeWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */; };
 		C21BA9C11F0C7B93004520C0 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA9C01F0C7B93004520C0 /* JsonLoader.swift */; };
 		C21BA9C31F0C7EFD004520C0 /* DogLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA9C21F0C7EFD004520C0 /* DogLoader.swift */; };
 		C2B0DE821F0C163300DF9983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0DE811F0C163300DF9983 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 		7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogCRUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9426295BA7F44CF1C41BF715 /* Pods-DogCRUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCRUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD.debug.xcconfig"; sourceTree = "<group>"; };
 		9F72942CE970D95E462BC60F /* Pods-DogCRUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCRUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD.release.xcconfig"; sourceTree = "<group>"; };
+		C211173F1F0D2AA800CA7E24 /* Doge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doge.png; sourceTree = "<group>"; };
+		C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DogeWallpaper.jpg; sourceTree = "<group>"; };
 		C21BA9C01F0C7B93004520C0 /* JsonLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
 		C21BA9C21F0C7EFD004520C0 /* DogLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogLoader.swift; sourceTree = "<group>"; };
 		C2B0DE7E1F0C163300DF9983 /* DogCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +59,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C211173E1F0D2A9700CA7E24 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */,
+				C211173F1F0D2AA800CA7E24 /* Doge.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		C21BA9BD1F0C7B56004520C0 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 		C2B0DE801F0C163300DF9983 /* DogCRUD */ = {
 			isa = PBXGroup;
 			children = (
+				C211173E1F0D2A9700CA7E24 /* Resource */,
 				C21BA9BD1F0C7B56004520C0 /* Loader */,
 				C2B0DE961F0C2EF800DF9983 /* Controllers */,
 				C2B0DE931F0C2E6200DF9983 /* Model */,
@@ -187,6 +201,8 @@
 				C2B0DE8C1F0C163300DF9983 /* LaunchScreen.storyboard in Resources */,
 				C2B0DE891F0C163300DF9983 /* Assets.xcassets in Resources */,
 				C2B0DE871F0C163300DF9983 /* Main.storyboard in Resources */,
+				C21117401F0D2AA800CA7E24 /* Doge.png in Resources */,
+				C21117421F0D2B7300CA7E24 /* DogeWallpaper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
