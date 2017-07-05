@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  DogCRUD
 //
 //  Created by Maisa Milena on 04/07/17.
@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 
-class ViewController: UIViewController, LoadDogDelegate {
+class HomeViewController: UIViewController, LoadDogDelegate {
  
     var dogs = Array<Dog>()
     var dogLoader : DogLoader?
