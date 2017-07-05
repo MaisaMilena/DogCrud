@@ -39,10 +39,10 @@ app.post('/dogs/insert', (req, res, err) => {
 // Chamada para deletar um Dog via DELETE
 app.delete('/dogs/delete', (req, res, err) => {
 
-	var dogId = req.query
-	database.deleteDogById(id, (err) => {
+	var dog = req.query
+	database.deleteDogById(dog, (err) => {
 		if(!err) {
-			res.send('Doguinho de id '+dogID.id+ ' excluído')
+			res.send('Doguinho de id '+dog.id+ ' excluído')
 		} else {
 			res.status(400).json('Delete problem: '+err)
 		}
