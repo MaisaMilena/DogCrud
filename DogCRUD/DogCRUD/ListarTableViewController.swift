@@ -16,6 +16,9 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     
     var loader: DogPresenter?
     
+    
+    var idDogAtualizacao = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,10 +48,10 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
         self.dogs = dogs
         
         //print("Listar loadDogsConcluido")
-        
-        for dog in dogs{
-            print (dog.name)
-        }
+//        
+//        for dog in dogs{
+//            print (dog.name)
+//        }
         
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -59,6 +62,7 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
         print(mensagem)
     }
     
+    // MARK: - Data source
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: UITableViewCell = self.listaDeDogs.dequeueReusableCell(withIdentifier: "cell")!
@@ -83,15 +87,30 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
-    /*
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let idDog = dogs[indexPath.row].id
+        
+        if editingStyle == .delete {
+            
+            // Chama a requisição pra apagar
+            dogs.remove(at: 0)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            //self.tableView.reloadData()
+        } 
+    }
+    
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let proximaView = segue.destination as! AtualizarTableViewController
+        proximaView.idDog = idDogAtualizacao
     }
-    */
+    
 
 }
