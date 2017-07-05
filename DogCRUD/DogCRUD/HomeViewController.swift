@@ -2,43 +2,47 @@
 //  HomeViewController.swift
 //  DogCRUD
 //
-//  Created by Maisa Milena on 04/07/17.
+//  Created by Maisa Milena on 05/07/17.
 //  Copyright © 2017 BEPiD. All rights reserved.
 //
 
 import UIKit
-import Alamofire
 
+class HomeViewController: UIViewController {
 
-class HomeViewController: UIViewController, LoadDogDelegate {
- 
-    var dogs = Array<Dog>()
-    var dogLoader : DogLoader?
+    @IBOutlet weak var listarButton: UIButton!
+    @IBOutlet weak var cadastrarButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Determinando o parâmetro passado na url
-        //let parameters:Parameters = ["name": "dog do xcode", "color":"blue"]
-        
-        dogLoader = DogLoader()
-        dogLoader?.delegate = self
+        // Deixar os botões arredondados
+        listarButton.layer.cornerRadius = listarButton.frame.height/2
+        cadastrarButton.layer.cornerRadius = listarButton.frame.height/2
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func listarAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "homeListarSegue", sender: nil)
     }
 
-    func loadDogsConcluido(dogs: Array<Dog>) {
-        self.dogs = dogs
-        print("🐰 Chegou na view controller ")
-        for dog in dogs{
-            print(dog.id)
-            print(dog.name)
-            print(dog.color)
+    @IBAction func cadastrarAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "homeCadastrarSegue", sender: nil)
+    }
+    
+    // MARK: - Navegação
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        if segue.identifier == "homeListarSegue" {
+            segue.destination as! ListarTableViewController
+        } else {
+            segue.destination as! CadastrarTableViewController
         }
     }
+    
 
 }
-
