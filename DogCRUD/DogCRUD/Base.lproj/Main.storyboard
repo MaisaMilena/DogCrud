@@ -35,6 +35,9 @@
                                 <state key="normal" title="  Listar todos   ">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="listarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPB-Nf-QGB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyl-PO-A61">
                                 <rect key="frame" x="122" y="353" width="130" height="30"/>
@@ -45,6 +48,9 @@
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cadastrarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yET-3v-ra8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +63,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="lCF-Gl-mUc"/>
                     <connections>
-                        <segue destination="jpF-YV-VhP" kind="show" identifier="homeBuscarSegue" id="v1e-bU-gPu"/>
+                        <outlet property="cadastrarButton" destination="Zyl-PO-A61" id="zQ2-J6-BBl"/>
+                        <outlet property="listarButton" destination="a2O-Mt-3T9" id="viV-Y5-BGc"/>
+                        <segue destination="jpF-YV-VhP" kind="show" identifier="homeListarSegue" id="v1e-bU-gPu"/>
                         <segue destination="yx1-fy-mA1" kind="show" identifier="homeCadastrarSegue" id="ckF-Sz-5nw"/>
                     </connections>
                 </viewController>
@@ -68,7 +76,7 @@
         <!--Listar-->
         <scene sceneID="KZc-u8-C61">
             <objects>
-                <tableViewController title="Listar" id="jpF-YV-VhP" userLabel="Listar" sceneMemberID="viewController">
+                <tableViewController title="Listar" id="jpF-YV-VhP" userLabel="Listar" customClass="ListarTableViewController" customModule="DogCRUD" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" id="jCs-JT-Ipc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +197,7 @@
         <!--Atualizar-->
         <scene sceneID="uX0-rA-YnO">
             <objects>
-                <tableViewController title="Atualizar" id="GBc-rQ-33V" sceneMemberID="viewController">
+                <tableViewController title="Atualizar" id="GBc-rQ-33V" customClass="AtualizarTableViewController" customModule="DogCRUD" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qlI-gY-T1x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +302,7 @@
         <!--Cadastrar-->
         <scene sceneID="LwX-tW-1fQ">
             <objects>
-                <tableViewController title="Cadastrar" id="yx1-fy-mA1" sceneMemberID="viewController">
+                <tableViewController title="Cadastrar" id="yx1-fy-mA1" customClass="CadastrarTableViewController" customModule="DogCRUD" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ska-7f-IHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

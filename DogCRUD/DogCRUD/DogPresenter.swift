@@ -1,5 +1,5 @@
 //
-//  DogLoader.swift
+//  DogPresenter.swift
 //  DogCRUD
 //
 //  Created by Maisa Milena on 04/07/17.
@@ -8,15 +8,18 @@
 
 import UIKit
 
-protocol LoadDogDelegate{
+protocol LoadDogPresenterDelegate{
     func loadDogsConcluido(dogs: Array<Dog>)
+    func loadDogsFalhou(mensagem: String)
 }
 
-class DogLoader: NSObject, JsonLoaderDelegate {
+class DogPresenter: NSObject, JsonLoaderDelegate {
+   
+
     
     let url = "http://localhost:3000/dogs"
     
-    var delegate: LoadDogDelegate?
+    var delegate: LoadDogPresenterDelegate?
     let loader: JsonLoader = JsonLoader()
     
     override init() {
@@ -26,7 +29,7 @@ class DogLoader: NSObject, JsonLoaderDelegate {
         loader.carregarConteudoDaUrl(url: url)
     }
 
-    
+    // MARK: - Funções do Presenter
     /*
      Assim que o JsonLoader terminou de carregar os dados eles são enviados no parâmetro dessa função
      */
@@ -34,6 +37,11 @@ class DogLoader: NSObject, JsonLoaderDelegate {
         tratarJson(arrayDicionario: arrayDicionario)
     }
     
+    func loaderJsonFalhou(mensagem: String) {
+        self.delegate?.loadDogsFalhou(mensagem: mensagem)
+    }
+    
+    // MARK: - Tratar dados
     /**
      Responsável pelo tratamento adequado dos dados vindos do servidor
      - param : array de dicionario de Dog

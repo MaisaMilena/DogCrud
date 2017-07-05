@@ -12,6 +12,7 @@ import Alamofire
 //Delegate protocol
 protocol JsonLoaderDelegate{
     func loaderJsonConcluido(arrayDicionario: [NSDictionary])
+    func loaderJsonFalhou(mensagem: String)
 }
 
 class JsonLoader: NSObject {
@@ -20,7 +21,7 @@ class JsonLoader: NSObject {
     var delegate :JsonLoaderDelegate?
     
     // MARK: - Dados carregados
-    var arrayDadosJSON : [NSDictionary]?
+    //var arrayDadosJSON : [NSDictionary]?
     
     public func carregarConteudoDaUrl(url:String){
    
@@ -28,19 +29,19 @@ class JsonLoader: NSObject {
             
             switch response.result {
             case .success:
-                self.arrayDadosJSON = response.result.value as! [NSDictionary]
+                let arrayDadosJSON = response.result.value as! [NSDictionary]
+                self.delegate?.loaderJsonConcluido(arrayDicionario: arrayDadosJSON)
                 break
             case .failure(let error):
-                print("🦊")
-                print(error)
+                self.delegate?.loaderJsonFalhou(mensagem: "🦊 Algum erro ocorreu, verifique o status do servidor: \(error)")
                 break
             }
 
-            if self.arrayDadosJSON == nil {
-                print("🦊 Algum erro ocorreu, verifique o status do servidor")
-            } else {
-                self.delegate?.loaderJsonConcluido(arrayDicionario: self.arrayDadosJSON!)
-            }
+//            if self.arrayDadosJSON == nil {
+//                
+//            } else {
+            
+            //}
             
         }
 

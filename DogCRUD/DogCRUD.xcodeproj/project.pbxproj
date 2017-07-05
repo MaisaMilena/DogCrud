@@ -11,13 +11,13 @@
 		C21117401F0D2AA800CA7E24 /* Doge.png in Resources */ = {isa = PBXBuildFile; fileRef = C211173F1F0D2AA800CA7E24 /* Doge.png */; };
 		C21117421F0D2B7300CA7E24 /* DogeWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */; };
 		C21117461F0D33C400CA7E24 /* DogeTouch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C21117451F0D33C400CA7E24 /* DogeTouch.jpg */; };
-		C214DA9D1F0D55E700AFE8C0 /* ListarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214DA9C1F0D55E700AFE8C0 /* ListarViewController.swift */; };
 		C214DA9F1F0D560400AFE8C0 /* AtualizarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214DA9E1F0D560400AFE8C0 /* AtualizarTableViewController.swift */; };
 		C214DAA11F0D561C00AFE8C0 /* CadastrarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214DAA01F0D561C00AFE8C0 /* CadastrarTableViewController.swift */; };
+		C214DAA31F0D569700AFE8C0 /* ListarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214DAA21F0D569700AFE8C0 /* ListarTableViewController.swift */; };
+		C214DAA51F0D682700AFE8C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214DAA41F0D682700AFE8C0 /* HomeViewController.swift */; };
 		C21BA9C11F0C7B93004520C0 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA9C01F0C7B93004520C0 /* JsonLoader.swift */; };
-		C21BA9C31F0C7EFD004520C0 /* DogLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA9C21F0C7EFD004520C0 /* DogLoader.swift */; };
+		C21BA9C31F0C7EFD004520C0 /* DogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA9C21F0C7EFD004520C0 /* DogPresenter.swift */; };
 		C2B0DE821F0C163300DF9983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0DE811F0C163300DF9983 /* AppDelegate.swift */; };
-		C2B0DE841F0C163300DF9983 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0DE831F0C163300DF9983 /* HomeViewController.swift */; };
 		C2B0DE871F0C163300DF9983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B0DE851F0C163300DF9983 /* Main.storyboard */; };
 		C2B0DE891F0C163300DF9983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B0DE881F0C163300DF9983 /* Assets.xcassets */; };
 		C2B0DE8C1F0C163300DF9983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B0DE8A1F0C163300DF9983 /* LaunchScreen.storyboard */; };
@@ -31,14 +31,14 @@
 		C211173F1F0D2AA800CA7E24 /* Doge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doge.png; sourceTree = "<group>"; };
 		C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DogeWallpaper.jpg; sourceTree = "<group>"; };
 		C21117451F0D33C400CA7E24 /* DogeTouch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DogeTouch.jpg; sourceTree = "<group>"; };
-		C214DA9C1F0D55E700AFE8C0 /* ListarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarViewController.swift; sourceTree = "<group>"; };
 		C214DA9E1F0D560400AFE8C0 /* AtualizarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtualizarTableViewController.swift; sourceTree = "<group>"; };
 		C214DAA01F0D561C00AFE8C0 /* CadastrarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastrarTableViewController.swift; sourceTree = "<group>"; };
+		C214DAA21F0D569700AFE8C0 /* ListarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarTableViewController.swift; sourceTree = "<group>"; };
+		C214DAA41F0D682700AFE8C0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C21BA9C01F0C7B93004520C0 /* JsonLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
-		C21BA9C21F0C7EFD004520C0 /* DogLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogLoader.swift; sourceTree = "<group>"; };
+		C21BA9C21F0C7EFD004520C0 /* DogPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogPresenter.swift; sourceTree = "<group>"; };
 		C2B0DE7E1F0C163300DF9983 /* DogCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B0DE811F0C163300DF9983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2B0DE831F0C163300DF9983 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C2B0DE861F0C163300DF9983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2B0DE881F0C163300DF9983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B0DE8B1F0C163300DF9983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,13 +77,13 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
-		C21BA9BD1F0C7B56004520C0 /* Loader */ = {
+		C21BA9BD1F0C7B56004520C0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				C21BA9C01F0C7B93004520C0 /* JsonLoader.swift */,
-				C21BA9C21F0C7EFD004520C0 /* DogLoader.swift */,
+				C21BA9C21F0C7EFD004520C0 /* DogPresenter.swift */,
 			);
-			name = Loader;
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		C2B0DE751F0C163300DF9983 = {
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C211173E1F0D2A9700CA7E24 /* Resource */,
-				C21BA9BD1F0C7B56004520C0 /* Loader */,
+				C21BA9BD1F0C7B56004520C0 /* Presenter */,
 				C2B0DE961F0C2EF800DF9983 /* Controllers */,
 				C2B0DE931F0C2E6200DF9983 /* Model */,
 				C2B0DE811F0C163300DF9983 /* AppDelegate.swift */,
@@ -131,10 +131,10 @@
 		C2B0DE961F0C2EF800DF9983 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C2B0DE831F0C163300DF9983 /* HomeViewController.swift */,
-				C214DA9C1F0D55E700AFE8C0 /* ListarViewController.swift */,
 				C214DA9E1F0D560400AFE8C0 /* AtualizarTableViewController.swift */,
 				C214DAA01F0D561C00AFE8C0 /* CadastrarTableViewController.swift */,
+				C214DAA21F0D569700AFE8C0 /* ListarTableViewController.swift */,
+				C214DAA41F0D682700AFE8C0 /* HomeViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -274,13 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C214DAA31F0D569700AFE8C0 /* ListarTableViewController.swift in Sources */,
 				C21BA9C11F0C7B93004520C0 /* JsonLoader.swift in Sources */,
-				C2B0DE841F0C163300DF9983 /* HomeViewController.swift in Sources */,
 				C2B0DE821F0C163300DF9983 /* AppDelegate.swift in Sources */,
-				C214DA9D1F0D55E700AFE8C0 /* ListarViewController.swift in Sources */,
+				C214DAA51F0D682700AFE8C0 /* HomeViewController.swift in Sources */,
 				C214DA9F1F0D560400AFE8C0 /* AtualizarTableViewController.swift in Sources */,
 				C214DAA11F0D561C00AFE8C0 /* CadastrarTableViewController.swift in Sources */,
-				C21BA9C31F0C7EFD004520C0 /* DogLoader.swift in Sources */,
+				C21BA9C31F0C7EFD004520C0 /* DogPresenter.swift in Sources */,
 				C2B0DE951F0C2E7800DF9983 /* Dog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
