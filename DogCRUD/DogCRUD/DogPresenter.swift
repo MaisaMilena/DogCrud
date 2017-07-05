@@ -27,6 +27,7 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
         super.init()
         loader.delegate = self
         loader.carregarConteudoDaUrl(url: url)
+        
     }
 
     // MARK: - Funções do Presenter
@@ -34,20 +35,27 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
      Assim que o JsonLoader terminou de carregar os dados eles são enviados no parâmetro dessa função
      */
     func loaderJsonConcluido(arrayDicionario: [NSDictionary]){
-        tratarJson(arrayDicionario: arrayDicionario)
+       // print("DogPresenter JsonConcluido")
+        let dogs = tratarJson(arrayDicionario: arrayDicionario)
+        // Transmite esses dados tratados para uma outra classe
+        self.delegate?.loadDogsConcluido(dogs: dogs)
+//        for dog in dogs{
+//            print (dog.name)
+//        }
     }
     
     func loaderJsonFalhou(mensagem: String) {
         self.delegate?.loadDogsFalhou(mensagem: mensagem)
     }
     
+
     // MARK: - Tratar dados
     /**
      Responsável pelo tratamento adequado dos dados vindos do servidor
      - param : array de dicionario de Dog
      */
-    private func tratarJson(arrayDicionario: [NSDictionary]){
-        print("Entrou no Tratar Json")
+    private func tratarJson(arrayDicionario: [NSDictionary]) -> Array<Dog>{
+      
         var dogs = Array<Dog>()
         
         for dado in arrayDicionario{
@@ -61,8 +69,8 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
             
             dogs.append(dog)
         }
-        // Depois que a função terminou de executa ela transmite esses dados tratados para uma outra classe
-        self.delegate?.loadDogsConcluido(dogs: dogs)
+        
+        return dogs
     }
     
     

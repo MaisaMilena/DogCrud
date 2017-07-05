@@ -20,9 +20,6 @@ class JsonLoader: NSObject {
     //MARK:- Delegate
     var delegate :JsonLoaderDelegate?
     
-    // MARK: - Dados carregados
-    //var arrayDadosJSON : [NSDictionary]?
-    
     public func carregarConteudoDaUrl(url:String){
    
         Alamofire.request(url, method: .get).responseJSON { response in
@@ -36,13 +33,6 @@ class JsonLoader: NSObject {
                 self.delegate?.loaderJsonFalhou(mensagem: "🦊 Algum erro ocorreu, verifique o status do servidor: \(error)")
                 break
             }
-
-//            if self.arrayDadosJSON == nil {
-//                
-//            } else {
-            
-            //}
-            
         }
 
     }

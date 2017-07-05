@@ -11,16 +11,18 @@ import UIKit
 class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate {
 
     var dogs = Array<Dog>()
-    var dogPresenter: DogPresenter?
+    
+    @IBOutlet var listaDeDogs: UITableView!
+    
+    var loader: DogPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        dogPresenter = DogPresenter()
-        dogPresenter?.delegate = self
+
+        loader = DogPresenter()
+        loader?.delegate = self
         
-        
-         self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,31 +31,59 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    // Se o array estiver vazio retorna 1 célula, que será a de apresentar uma mensagem informando que não há dados para serem listados
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return dogs.count == 0 ? 1 : dogs.count
     }
     
     // MARK: - Funções do Presenter
+    
+    /**
+     Carregamento concluído com sucesso
+     */
     func loadDogsConcluido(dogs: Array<Dog>) {
         self.dogs = dogs
-        print("🐰 Chegou na view controller ")
+        
+        //print("Listar loadDogsConcluido")
+        
         for dog in dogs{
-            print(dog.id)
-            print(dog.name)
-            print(dog.color)
+            print (dog.name)
+        }
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
         }
     }
     
     func loadDogsFalhou(mensagem: String){
         print(mensagem)
     }
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: UITableViewCell = self.listaDeDogs.dequeueReusableCell(withIdentifier: "cell")!
+        
+        if dogs.count == 0 {
+            cell.textLabel?.text = "Não há dados para serem apresentados"
+        } else {
+            cell.textLabel?.text = ""
+            let dog = dogs[indexPath.row]
+            
+            let id = cell.viewWithTag(1) as! UILabel
+            id.text = String(dog.id)
+            
+            let name = cell.viewWithTag(2) as! UILabel
+            name.text = dog.name
+            
+            let color = cell.viewWithTag(3) as! UILabel
+            color.text = dog.color
+            
+        }
+        
+        return cell
+    }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -77,12 +77,12 @@
         <scene sceneID="KZc-u8-C61">
             <objects>
                 <tableViewController title="Listar" id="jpF-YV-VhP" userLabel="Listar" customClass="ListarTableViewController" customModule="DogCRUD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" id="jCs-JT-Ipc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" id="jCs-JT-Ipc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="104" id="D7F-Gn-Qbb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="104" id="D7F-Gn-Qbb">
                                 <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D7F-Gn-Qbb" id="7dF-Xa-Z8j">
@@ -101,7 +101,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sex-f9-qqZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sex-f9-qqZ">
                                                     <rect key="frame" x="30" y="0.0" width="266" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -126,7 +126,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewZ-Z9-Ae9">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewZ-Z9-Ae9">
                                                     <rect key="frame" x="60" y="0.0" width="236" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -151,7 +151,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4S-DE-m1L">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4S-DE-m1L">
                                                     <rect key="frame" x="45" y="0.0" width="251" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -166,17 +166,28 @@
                                                 <constraint firstItem="p4S-DE-m1L" firstAttribute="leading" secondItem="TCw-sR-Ufx" secondAttribute="trailing" id="mc4-RE-Ofg"/>
                                             </constraints>
                                         </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Erh-Nb-XbM" userLabel="linha azul">
+                                            <rect key="frame" x="0.0" y="103" width="377" height="1"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="HQM-vG-FI2"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Bqf-ct-2ev" firstAttribute="leading" secondItem="7dF-Xa-Z8j" secondAttribute="leadingMargin" constant="15" id="4NN-0X-fPX"/>
+                                        <constraint firstItem="Erh-Nb-XbM" firstAttribute="top" secondItem="VzN-qg-4GP" secondAttribute="bottom" constant="13" id="4hf-Na-M3a"/>
                                         <constraint firstItem="VzN-qg-4GP" firstAttribute="leading" secondItem="7dF-Xa-Z8j" secondAttribute="leadingMargin" constant="15" id="B0V-Jk-Ob8"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Ndp-h2-En9" secondAttribute="trailing" constant="15" id="FCF-qN-nF3"/>
                                         <constraint firstItem="Ndp-h2-En9" firstAttribute="top" secondItem="Bqf-ct-2ev" secondAttribute="bottom" constant="10" id="MeH-8J-uzr"/>
+                                        <constraint firstItem="Erh-Nb-XbM" firstAttribute="leading" secondItem="7dF-Xa-Z8j" secondAttribute="leading" id="TTd-wr-KdI"/>
                                         <constraint firstItem="Ndp-h2-En9" firstAttribute="leading" secondItem="7dF-Xa-Z8j" secondAttribute="leadingMargin" constant="15" id="WRd-CD-Gu1"/>
-                                        <constraint firstItem="VzN-qg-4GP" firstAttribute="top" secondItem="Ndp-h2-En9" secondAttribute="bottom" constant="10" id="fBw-bN-JxP"/>
+                                        <constraint firstItem="VzN-qg-4GP" firstAttribute="top" secondItem="Ndp-h2-En9" secondAttribute="bottom" constant="10" id="WbE-fH-fG2"/>
+                                        <constraint firstAttribute="trailing" secondItem="Erh-Nb-XbM" secondAttribute="trailing" constant="-35" id="bXd-bo-CMI"/>
                                         <constraint firstItem="Bqf-ct-2ev" firstAttribute="top" secondItem="7dF-Xa-Z8j" secondAttribute="topMargin" id="kI3-J5-3Sf"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Bqf-ct-2ev" secondAttribute="trailing" constant="15" id="lgv-Nv-H3I"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="VzN-qg-4GP" secondAttribute="trailing" constant="15" id="p1V-Ez-3nv"/>
+                                        <constraint firstAttribute="bottom" secondItem="Erh-Nb-XbM" secondAttribute="bottom" id="uPw-V7-06g"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -189,6 +200,9 @@
                             <outlet property="delegate" destination="jpF-YV-VhP" id="8ip-0Z-ivS"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="listaDeDogs" destination="jCs-JT-Ipc" id="ML8-NS-GB4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAw-0X-vqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
