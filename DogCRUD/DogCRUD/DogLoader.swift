@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LoadDogDelegate{
-    func LoadDogsConcluido(dogs: Array<Dog>)
+    func loadDogsConcluido(dogs: Array<Dog>)
 }
 
 class DogLoader: NSObject, JsonLoaderDelegate {
@@ -19,12 +19,13 @@ class DogLoader: NSObject, JsonLoaderDelegate {
     var delegate: LoadDogDelegate?
     let loader: JsonLoader = JsonLoader()
     
-    
-    func carregarDadosDog() {
+    override init() {
         
+        super.init()
         loader.delegate = self
         loader.carregarConteudoDaUrl(url: url)
     }
+
     
     /*
      Assim que o JsonLoader terminou de carregar os dados eles são enviados no parâmetro dessa função
@@ -53,7 +54,7 @@ class DogLoader: NSObject, JsonLoaderDelegate {
             dogs.append(dog)
         }
         // Depois que a função terminou de executa ela transmite esses dados tratados para uma outra classe
-        self.delegate?.LoadDogsConcluido(dogs: dogs)
+        self.delegate?.loadDogsConcluido(dogs: dogs)
     }
     
     
