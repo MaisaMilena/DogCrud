@@ -15,17 +15,10 @@ protocol JsonLoaderDelegate{
     func loaderJsonFalhou(mensagem: String)
 }
 
-protocol JsonDelegateRemove{
-    func removeConcluido()
-    func removeFalhou(mensagem: String)
-}
-
 class JsonLoader: NSObject {
     
     //MARK:- Delegate
-    var getDelegate :JsonLoaderDelegate?
-    
-    var removeDelegate: JsonDelegateRemove?
+    var delegate :JsonLoaderDelegate?
     
     public func carregarConteudoDaUrl(url:String){
    
@@ -34,28 +27,15 @@ class JsonLoader: NSObject {
             switch response.result {
             case .success:
                 let arrayDadosJSON = response.result.value as! [NSDictionary]
-                self.getDelegate?.loaderJsonConcluido(arrayDicionario: arrayDadosJSON)
+                self.delegate?.loaderJsonConcluido(arrayDicionario: arrayDadosJSON)
                 break
             case .failure(let error):
-                self.getDelegate?.loaderJsonFalhou(mensagem: "🦊 Algum erro ocorreu, verifique o status do servidor: \(error)")
+                self.delegate?.loaderJsonFalhou(mensagem: "🦊 Algum erro ocorreu, verifique o status do servidor: \(error)")
                 break
             }
         }
 
     }
     
-    public func deletarDogById(url: String, id: String){
-        Alamofire.request(url, method: .post).responseJSON { response in
-            
-            switch response.result {
-            case .success:
-                self.removeDelegate?.removeConcluido()
-                break
-            case .failure(let error):
-                self.removeDelegate?.removeFalhou(mensagem: String(describing: error))
-                break
-            }
-        }
-    }
 
 }
