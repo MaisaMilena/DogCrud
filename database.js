@@ -11,8 +11,8 @@ db.run('CREATE TABLE IF NOT EXISTS dog(id INTEGER PRIMARY KEY AUTOINCREMENT, nam
 })
 
 var insertDog = (dog, callback) => {
-	var query = db.prepare('INSERT INTO dog VALUES (?,?, ?)')
-	query.run(dog.id, dog.name, dog.color, callback)
+	var query = db.prepare('INSERT INTO dog (name, color) VALUES (?, ?)')
+	query.run(dog.name, dog.color, callback)
 }
 
 var getAllDogs = (callback) => {

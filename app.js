@@ -2,6 +2,9 @@ var express = require('express')
 var app = express()
 // Esse ./ no início está dizendo que está na mesma pasta raíz que esse arquivo app.js
 var database = require('./database')
+var bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({ extended: false}))
 
 
 app.get('/', (req, res, err) => {
@@ -24,7 +27,7 @@ app.get('/dogs', (req, res, err) => {
 // Chamada para insert em Dog via POST
 app.post('/dogs/insert', (req, res, err) => {
 
-	var dog = req.query
+	var dog = req.body
 	database.insertDog(dog, (err) => {
 			if (!err) {
 				res.status(200)

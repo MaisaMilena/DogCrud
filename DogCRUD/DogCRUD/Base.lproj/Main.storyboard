@@ -317,7 +317,7 @@
         <scene sceneID="LwX-tW-1fQ">
             <objects>
                 <tableViewController title="Cadastrar" id="yx1-fy-mA1" customClass="CadastrarTableViewController" customModule="DogCRUD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ska-7f-IHo">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ska-7f-IHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -402,6 +402,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="cadastarAction:" destination="yx1-fy-mA1" eventType="touchUpInside" id="rLe-L2-yc7"/>
+                                                        <segue destination="BYZ-38-t0r" kind="show" identifier="cadastrarHomeSegue" id="Dmq-cX-p5F"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -427,8 +428,15 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvT-RO-tX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="wlh-zd-LhU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="y4t-Xs-zpZ"/>
+                    </items>
+                </navigationBar>
             </objects>
-            <point key="canvasLocation" x="1973.5999999999999" y="816.34182908545733"/>
+            <point key="canvasLocation" x="2026" y="815"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zeU-gx-JpU">
@@ -454,4 +462,7 @@
         <image name="DogeTouch.jpg" width="300" height="225"/>
         <image name="DogeWallpaper.jpg" width="2880" height="1800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SLx-Vl-gxH"/>
+    </inferredMetricsTieBreakers>
 </document>

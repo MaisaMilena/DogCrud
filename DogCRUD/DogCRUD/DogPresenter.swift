@@ -57,12 +57,15 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
         var dogs = Array<Dog>()
         
         for dado in arrayDicionario{
+      
             let id = dado.object(forKey: "id")
             let name = dado.object(forKey: "name")
             let color = dado.object(forKey: "color")
             
+            let idGambi = "\(id!)"
+            
             let dog = Dog()
-            dog.id = id as! String
+            dog.id = idGambi
             dog.name = name as! String
             dog.color = color as! String
             

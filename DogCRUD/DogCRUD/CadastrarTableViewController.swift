@@ -22,11 +22,11 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     // MARK: - Funções
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // arredondar o botão
         cadastrarButton.layer.cornerRadius = cadastrarButton.frame.height/2
         
-        insert.delegate = self
+       //insert.delegate = self
         
     }
 
@@ -35,12 +35,11 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     }
     
     func insertDogConcluido() {
-        
-        
-        to aqui
-        
-        
-        let alert = UIAlertController(title: "", message: <#T##String?#>, preferredStyle: <#T##UIAlertControllerStyle#>)
+        print("Inseret do dog concluido")
+//        let alert = UIAlertController(title: "", message: "Cadastro realizado com sucesso!", preferredStyle: .actionSheet)
+//        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { action in
+//            self.performSegue(withIdentifier: "cadastrarHomeSegue", sender: nil)
+//        }))
     }
     
     func insertDogFalhou(erro: String) {
@@ -59,20 +58,42 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     }
 
     @IBAction func cadastarAction(_ sender: UIButton) {
+       
+        if nome.text != "" && cor.text != "" {
+            
+            print("Entrou no cadastrarAction para textos diferente de nil: \(nome.text!) e \(cor.text!)")
+            let dog = Dog()
+            dog.id = ""
+            dog.name = nome.text!
+            dog.color = cor.text!
+            
+            print("Dog: nome \(dog.name) e cor \(dog.color)")
+            insert.insertDog(dog: dog)
+        } else {
+            
+            if nome.text == "" {
+                nome.placeholder = "O nome não pode ser vazio"
+                nome.textColor = UIColor.red
+            }
         
-        var dog = Dog()
-        dog.id = ""
-        dog.name = nome.text!
-        dog.color = cor.text!
+            if cor.text == "" {
+                cor.placeholder = "A cor não pode ser vazia"
+                cor.textColor = UIColor.red
+            }
+        }
         
-        insert.insertDog(dog: dog)
+        
+        
     }
     
     
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        segue.destination as! HomeViewController
+        if segue.identifier == "cadastrarHomeSegue"{
+            segue.destination as! HomeViewController
+
+        }
     }
     
 
