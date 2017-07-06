@@ -14,11 +14,13 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     
     @IBOutlet var listaDeDogs: UITableView!
     
+    // MARK: - Variáveis de delegate
     var loader: DogPresenter?
     var delete: RemoveDog?
     
     var idDogAtualizacao = 0
     
+    // MARK: - Funções
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,17 +37,10 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: - Table view data source
-
-    // Se o array estiver vazio retorna 1 célula, que será a de apresentar uma mensagem informando que não há dados para serem listados
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dogs.count == 0 ? 1 : dogs.count
-    }
     
     // MARK: - Funções do Presenter
     
-    /**
-     Carregamento concluído com sucesso
+    /** Carregamento concluído com sucesso
      */
     func loadDogsConcluido(dogs: Array<Dog>) {
         self.dogs = dogs
@@ -66,6 +61,12 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     }
     
     // MARK: - Data source
+    // Se o array estiver vazio retorna 1 célula, que será a de apresentar uma mensagem informando que não há dados para serem listados
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dogs.count == 0 ? 1 : dogs.count
+    }
+
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: UITableViewCell = self.listaDeDogs.dequeueReusableCell(withIdentifier: "cell")!
@@ -104,14 +105,12 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
             dogs.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             
-            print("🦄 Id do dog a ser removido: \(id)")
-            self.delete?.removeDog(id: String(id))
+            self.delete?.removeDog(id: id)
         } 
     }
 
     
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let proximaView = segue.destination as! AtualizarTableViewController
         proximaView.idDog = idDogAtualizacao
@@ -133,5 +132,4 @@ extension ListarTableViewController: RemoveDogPresenterDelegate {
         print(erro)
     }
 
-    
 }

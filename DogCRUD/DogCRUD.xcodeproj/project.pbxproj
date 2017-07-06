@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1FB863E85E5BD6A568CC997 /* Pods_DogCRUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */; };
+		C20D82FC1F0EB27000780944 /* InsertDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D82FB1F0EB27000780944 /* InsertDog.swift */; };
 		C21117401F0D2AA800CA7E24 /* Doge.png in Resources */ = {isa = PBXBuildFile; fileRef = C211173F1F0D2AA800CA7E24 /* Doge.png */; };
 		C21117421F0D2B7300CA7E24 /* DogeWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */; };
 		C21117461F0D33C400CA7E24 /* DogeTouch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C21117451F0D33C400CA7E24 /* DogeTouch.jpg */; };
@@ -29,6 +30,7 @@
 		7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogCRUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9426295BA7F44CF1C41BF715 /* Pods-DogCRUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCRUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD.debug.xcconfig"; sourceTree = "<group>"; };
 		9F72942CE970D95E462BC60F /* Pods-DogCRUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCRUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogCRUD/Pods-DogCRUD.release.xcconfig"; sourceTree = "<group>"; };
+		C20D82FB1F0EB27000780944 /* InsertDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertDog.swift; sourceTree = "<group>"; };
 		C211173F1F0D2AA800CA7E24 /* Doge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doge.png; sourceTree = "<group>"; };
 		C21117411F0D2B7300CA7E24 /* DogeWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DogeWallpaper.jpg; sourceTree = "<group>"; };
 		C21117451F0D33C400CA7E24 /* DogeTouch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DogeTouch.jpg; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C242EDB31F0D888500E2D4F3 /* RemoveDog.swift */,
+				C20D82FB1F0EB27000780944 /* InsertDog.swift */,
 			);
 			name = Sender;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				C214DAA31F0D569700AFE8C0 /* ListarTableViewController.swift in Sources */,
 				C21BA9C11F0C7B93004520C0 /* JsonLoader.swift in Sources */,
 				C2B0DE821F0C163300DF9983 /* AppDelegate.swift in Sources */,
+				C20D82FC1F0EB27000780944 /* InsertDog.swift in Sources */,
 				C214DAA51F0D682700AFE8C0 /* HomeViewController.swift in Sources */,
 				C214DA9F1F0D560400AFE8C0 /* AtualizarTableViewController.swift in Sources */,
 				C214DAA11F0D561C00AFE8C0 /* CadastrarTableViewController.swift in Sources */,

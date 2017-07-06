@@ -324,15 +324,15 @@
                         <sections>
                             <tableViewSection id="JLC-Tq-tST">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="amW-Ha-pvC" userLabel="Imagem Table View Cell">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="203" id="amW-Ha-pvC" userLabel="Imagem Table View Cell">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="amW-Ha-pvC" id="4PX-rS-dwV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Doge.png" translatesAutoresizingMaskIntoConstraints="NO" id="C5c-3D-ogO">
-                                                    <rect key="frame" x="85" y="3" width="205" height="174"/>
+                                                    <rect key="frame" x="85" y="3" width="205" height="197"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -344,7 +344,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="ENu-9f-4e1" userLabel="Nome Table View Cell">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="81"/>
+                                        <rect key="frame" x="0.0" y="203" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ENu-9f-4e1" id="kvh-Le-m48">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
@@ -366,7 +366,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="m3a-fS-s8L" userLabel="Cor Table View Cell">
-                                        <rect key="frame" x="0.0" y="261" width="375" height="81"/>
+                                        <rect key="frame" x="0.0" y="284" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m3a-fS-s8L" id="DEy-2K-O8x">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
@@ -387,19 +387,22 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="255" id="U8g-ES-zfN" userLabel="Cadastrar Table View Cell">
-                                        <rect key="frame" x="0.0" y="342" width="375" height="255"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="U8g-ES-zfN" userLabel="Cadastrar Table View Cell">
+                                        <rect key="frame" x="0.0" y="365" width="375" height="231"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U8g-ES-zfN" id="xCx-Gf-8s2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPe-FP-eGF">
-                                                    <rect key="frame" x="138" y="164" width="99" height="30"/>
+                                                    <rect key="frame" x="138" y="140.5" width="99" height="30"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="  Cadastrar ">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="cadastarAction:" destination="yx1-fy-mA1" eventType="touchUpInside" id="rLe-L2-yc7"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -417,6 +420,11 @@
                             <outlet property="delegate" destination="yx1-fy-mA1" id="nSI-QL-oSI"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="cadastrarButton" destination="nPe-FP-eGF" id="Fob-ah-0fk"/>
+                        <outlet property="cor" destination="tgg-0i-QdH" id="bOh-Mh-H45"/>
+                        <outlet property="nome" destination="WlX-w5-UBQ" id="lTd-sT-2Gn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvT-RO-tX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

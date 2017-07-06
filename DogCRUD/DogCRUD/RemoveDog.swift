@@ -18,10 +18,11 @@ class RemoveDog: NSObject, JsonLoaderDelegate {
     
     var url = "http://localhost:3000/dogs/delete?"
     
+        // MARK: - Variável de delegate
     var delegate: RemoveDogPresenterDelegate?
     let loader: JsonLoader = JsonLoader()
     
-    
+    // MARK:  - Funções
     override init() {
         
         super.init()
@@ -33,23 +34,16 @@ class RemoveDog: NSObject, JsonLoaderDelegate {
         
         url.append(id)
         
-        print("🦋 Url de requisição: \(url)")
+        //print("🦋 Url de requisição: \(url)")
         // Faz a requisição para a classe JsonLoader que chama o webservice
-        loader.carregarConteudoDaUrl(url: url, parameters: id, method: .delete)
+        loader.carregarConteudoDaUrl(url: url, parameters: [id], method: .delete)
     }
     
     // MARK: - Funções do JsonLoader
-    
-    /**
-     Passar esse método adiante significa sucesso
-    */
     func loaderJsonConcluido(arrayDicionario: [NSDictionary]) {
         self.delegate?.removeDogConcluido()
     }
-    
-    /**
-     Repassar a mensagem de erro adiante
-     */
+
     func loaderJsonFalhou(mensagem: String) {
         self.delegate?.removeDogFalhou(erro: mensagem)
     }

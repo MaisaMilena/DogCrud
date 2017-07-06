@@ -10,12 +10,9 @@ import UIKit
 
 class Dog: NSObject {
     
-    let id: Int64
+    var id: String = ""
     var name:String = ""
     var color:String = ""
     
-    required init(id: Int64) {
-        self.id = id
-    }
     
 }

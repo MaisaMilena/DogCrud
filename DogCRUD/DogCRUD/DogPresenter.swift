@@ -17,15 +17,17 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
     
     let url = "http://localhost:3000/dogs"
     
+    // MARK: - Variável de delegate
     var delegate: LoadDogPresenterDelegate?
     let loader: JsonLoader = JsonLoader()
     
+    // MARK:  - Funções
     override init() {
         
         super.init()
         loader.delegate = self
         // Faz a requisição para a classe JsonLoader que chama o webservice
-        loader.carregarConteudoDaUrl(url: url, parameters: "", method: .get)
+        loader.carregarConteudoDaUrl(url: url, parameters: [""], method: .get)
         
     }
 
@@ -34,13 +36,10 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
      Assim que o JsonLoader terminou de carregar os dados eles são enviados no parâmetro dessa função
      */
     func loaderJsonConcluido(arrayDicionario: [NSDictionary]){
-       // print("DogPresenter JsonConcluido")
         let dogs = tratarJson(arrayDicionario: arrayDicionario)
         // Transmite esses dados tratados para uma outra classe
         self.delegate?.loadDogsConcluido(dogs: dogs)
-//        for dog in dogs{
-//            print (dog.name)
-//        }
+        
     }
     
     func loaderJsonFalhou(mensagem: String) {
@@ -62,7 +61,8 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
             let name = dado.object(forKey: "name")
             let color = dado.object(forKey: "color")
             
-            let dog = Dog(id: id as! Int64)
+            let dog = Dog()
+            dog.id = id as! String
             dog.name = name as! String
             dog.color = color as! String
             
