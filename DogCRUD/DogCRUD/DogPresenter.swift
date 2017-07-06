@@ -24,11 +24,12 @@ class DogPresenter: NSObject, JsonLoaderDelegate {
         
         super.init()
         loader.delegate = self
-        loader.carregarConteudoDaUrl(url: url)
+        // Faz a requisição para a classe JsonLoader que chama o webservice
+        loader.carregarConteudoDaUrl(url: url, parameters: "", method: .get)
         
     }
 
-    // MARK: - Funções do Presenter
+    // MARK: - Funções do JsonLoader
     /*
      Assim que o JsonLoader terminou de carregar os dados eles são enviados no parâmetro dessa função
      */

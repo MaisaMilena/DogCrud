@@ -14,17 +14,43 @@ protocol RemoveDogPresenterDelegate {
     
 }
 
-
 class RemoveDog: NSObject, JsonLoaderDelegate {
     
-    let url = "http://localhost:3000"
+    var url = "http://localhost:3000/dogs/delete?"
+    
+    var delegate: RemoveDogPresenterDelegate?
+    let loader: JsonLoader = JsonLoader()
     
     
-    func loaderJsonConcluido(arrayDicionario: [NSDictionary]) {
+    override init() {
         
+        super.init()
+        loader.delegate = self
+
     }
     
+    public func removeDog(id: String){
+        
+        url.append(id)
+        
+        print("🦋 Url de requisição: \(url)")
+        // Faz a requisição para a classe JsonLoader que chama o webservice
+        loader.carregarConteudoDaUrl(url: url, parameters: id, method: .delete)
+    }
+    
+    // MARK: - Funções do JsonLoader
+    
+    /**
+     Passar esse método adiante significa sucesso
+    */
+    func loaderJsonConcluido(arrayDicionario: [NSDictionary]) {
+        self.delegate?.removeDogConcluido()
+    }
+    
+    /**
+     Repassar a mensagem de erro adiante
+     */
     func loaderJsonFalhou(mensagem: String) {
-        <#code#>
+        self.delegate?.removeDogFalhou(erro: mensagem)
     }
 }

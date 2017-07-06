@@ -20,8 +20,26 @@ class JsonLoader: NSObject {
     //MARK:- Delegate
     var delegate :JsonLoaderDelegate?
     
-    public func carregarConteudoDaUrl(url:String){
+    public func carregarConteudoDaUrl(url:String, parameters: String, method: HTTPMethod){
    
+        switch method {
+            case .get:
+                getDogs(url: url)
+            break
+            case .delete:
+                deleteDog(url: url, parameters: parameters)
+            break
+            default: break
+            
+        }
+        
+        
+        
+        
+
+    }
+    
+    private func getDogs(url: String){
         Alamofire.request(url, method: .get).responseJSON { response in
             
             switch response.result {
@@ -34,7 +52,23 @@ class JsonLoader: NSObject {
                 break
             }
         }
-
+    }
+    
+    private func deleteDog(url: String, parameters: String){
+        
+        let param: Parameters = ["id" : parameters]
+        Alamofire.request(url, method: .delete, parameters: param).responseString {
+            response in
+            
+            switch response.result {
+            case .success:
+                self.delegate?.loaderJsonConcluido(arrayDicionario: [])
+                break
+            case .failure(let error):
+                    self.delegate?.loaderJsonFalhou(mensagem: "🦊 Algum erro ocorreu, verifique o status do servidor: \(error)")
+                break
+            }
+        }
     }
     
 

@@ -15,7 +15,7 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     @IBOutlet var listaDeDogs: UITableView!
     
     var loader: DogPresenter?
-    
+    var delete: RemoveDog?
     
     var idDogAtualizacao = 0
     
@@ -24,6 +24,9 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
 
         loader = DogPresenter()
         loader?.delegate = self
+        
+        delete = RemoveDog()
+        delete?.delegate = self
         
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -92,18 +95,20 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        let idDog = dogs[indexPath.row].id
+        
         
         if editingStyle == .delete {
             
-            // Chama a requisição pra apagar
-            dogs.remove(at: 0)
+            let id = dogs[indexPath.row].id
+            
+            dogs.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
-            //self.tableView.reloadData()
+            
+            print("🦄 Id do dog a ser removido: \(id)")
+            self.delete?.removeDog(id: String(id))
         } 
     }
-    
-    
+
     
     // MARK: - Navigation
 
@@ -113,4 +118,20 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     }
     
 
+}
+// MARK: - Remove dog
+extension ListarTableViewController: RemoveDogPresenterDelegate {
+    
+    /** Atualiza a table view
+     */
+    func removeDogConcluido(){
+        self.tableView.reloadData()
+        
+    }
+    
+    func removeDogFalhou(erro: String){
+        print(erro)
+    }
+
+    
 }
