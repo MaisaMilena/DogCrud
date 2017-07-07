@@ -26,7 +26,7 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
         // arredondar o botão
         cadastrarButton.layer.cornerRadius = cadastrarButton.frame.height/2
         
-       //insert.delegate = self
+       insert.delegate = self
         
     }
 
@@ -34,6 +34,7 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: - Funções do JsonLoader
     func insertDogConcluido() {
         print("Inseret do dog concluido")
 //        let alert = UIAlertController(title: "", message: "Cadastro realizado com sucesso!", preferredStyle: .actionSheet)
@@ -60,8 +61,7 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     @IBAction func cadastarAction(_ sender: UIButton) {
        
         if nome.text != "" && cor.text != "" {
-            
-            print("Entrou no cadastrarAction para textos diferente de nil: \(nome.text!) e \(cor.text!)")
+        
             let dog = Dog()
             dog.id = ""
             dog.name = nome.text!
@@ -81,19 +81,14 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
                 cor.textColor = UIColor.red
             }
         }
-        
-        
-        
     }
     
     
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "cadastrarHomeSegue"{
-            segue.destination as! HomeViewController
+        segue.destination as! HomeViewController
 
-        }
     }
     
 

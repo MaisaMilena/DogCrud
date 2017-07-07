@@ -78,7 +78,14 @@ class JsonLoader: NSObject {
     
     private func postDog(url: String, parameters: [String]){
         // a ordem dos parâmetros é relevante
-        let param: Parameters = ["name":parameters[0], "color":parameters[1]]
+        var param: Parameters
+        
+        if parameters.contains("id"){
+            param = ["id":parameters[0],"name":parameters[1], "color":parameters[2]]
+        } else {
+            param = ["name":parameters[0], "color":parameters[1]]
+        }
+        
         
         Alamofire.request(url, method: .post, parameters: param, encoding: URLEncoding.httpBody, headers: nil).responseJSON{
             (response) in
@@ -92,8 +99,6 @@ class JsonLoader: NSObject {
                 break
             }
         }
-        
-        
     }
     
     

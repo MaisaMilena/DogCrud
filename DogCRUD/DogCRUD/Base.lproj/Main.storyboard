@@ -280,7 +280,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="230" id="fPl-Z5-3On" userLabel="Cadastrar Table View Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="230" id="fPl-Z5-3On" userLabel="Atualizar Table View Cell">
                                 <rect key="frame" x="0.0" y="370" width="375" height="230"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fPl-Z5-3On" id="Pa3-L3-bnA">
@@ -293,6 +293,9 @@
                                             <state key="normal" title="Atualizar">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="atualizarAction:" destination="GBc-rQ-33V" eventType="touchUpInside" id="U9f-LF-Hme"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -308,6 +311,13 @@
                             <outlet property="delegate" destination="GBc-rQ-33V" id="wrX-gT-41B"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="atualizarButton" destination="zke-1R-YZG" id="n2s-r3-b74"/>
+                        <outlet property="cor" destination="aFH-EV-Hrm" id="cwi-QL-i6K"/>
+                        <outlet property="corTextField" destination="aFH-EV-Hrm" id="Kor-AL-dUQ"/>
+                        <outlet property="nome" destination="k1q-7P-FGk" id="edb-NX-Flu"/>
+                        <outlet property="nomeTextField" destination="k1q-7P-FGk" id="0OU-dv-vPT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCJ-85-jjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -463,6 +473,6 @@
         <image name="DogeWallpaper.jpg" width="2880" height="1800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SLx-Vl-gxH"/>
+        <segue reference="Dmq-cX-p5F"/>
     </inferredMetricsTieBreakers>
 </document>
