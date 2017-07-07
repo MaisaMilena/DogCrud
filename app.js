@@ -25,7 +25,7 @@ app.get('/dogs', (req, res, err) => {
 })
 
 // Chamada para insert em Dog via POST
-app.post('/dogs/insert', (req, res, err) => {
+app.post('/dogs', (req, res, err) => {
 
 	var dog = req.body
 	database.insertDog(dog, (err) => {
@@ -54,7 +54,7 @@ app.delete('/dogs/delete', (req, res, err) => {
 
 
 // Chamada para atualizar um Dog via POST
-app.post('/dogs/update', (req, res, err) => {
+app.post('/dogs', (req, res, err) => {
 
 	var dog = req.query
 	database.updateDogById(dog, (err) => {
