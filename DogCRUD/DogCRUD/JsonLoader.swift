@@ -58,7 +58,11 @@ class JsonLoader: NSObject {
             }
         }
     }
-    
+    /**
+     Método para deleção de registros no servidor
+     - parameter url: url do servidor
+     - parameter parameters: id do registro a ser deletado
+     */
     private func deleteDog(url: String, parameters: [String]){
         // Para deletar usa-se somente um parâmetro que é o id
         let param: Parameters = ["id" : parameters[0]]
@@ -76,21 +80,23 @@ class JsonLoader: NSObject {
         }
     }
     
+    /**
+     O método POST é usado tanto para criação quanto para atualização de registros, a diferença entre eles é determinado pela quantidade de parâmatros passados.
+     A ordem dos parâmetros é relevante, sendo ela: id, name, color
+     - parameter url: url do servidor 
+     - parameter parameters: se inserção usar a ordem (name, color), se atualização usar (id, name, color)
+     */
     private func postDog(url: String, parameters: [String]){
         // a ordem dos parâmetros é relevante
         var param: Parameters
-        print("🐌 os params são: \(parameters.description)")
         if parameters.count == 3{
-            print("🎷Entrou no Json Loader para atualização")
             param = ["id":parameters[0],"name":parameters[1], "color":parameters[2]]
         } else {
-            print("🎷Entrou no Json Loader para criação")
             param = ["name":parameters[0], "color":parameters[1]]
         }
         
         Alamofire.request(url, method: .post, parameters: param, encoding: URLEncoding.httpBody, headers: nil).responseString{
             (response) in
-            print("🤖 está no request e os param são: ")
             switch response.result {
             case .success:
                 self.delegate?.loaderJsonConcluido(arrayDicionario: [])

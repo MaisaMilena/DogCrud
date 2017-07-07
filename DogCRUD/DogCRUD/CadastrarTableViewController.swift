@@ -14,8 +14,6 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     @IBOutlet weak var nome: UITextField!
     @IBOutlet weak var cor: UITextField!
     
-    @IBOutlet weak var cadastrarButton: UIButton!
-    
     // MARK: - Variáveis de delegate
     var insert: InsertDog = InsertDog()
     
@@ -23,9 +21,8 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // arredondar o botão
-        cadastrarButton.layer.cornerRadius = cadastrarButton.frame.height/2
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(cadastarAction))
+ 
        insert.delegate = self
         
     }
@@ -36,12 +33,13 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
     
     // MARK: - Funções do JsonLoader
     func insertDogConcluido() {
-        print("Inseret do dog concluido")
-//        let alert = UIAlertController(title: "", message: "Cadastro realizado com sucesso!", preferredStyle: .actionSheet)
-//        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { action in
-//            self.performSegue(withIdentifier: "cadastrarHomeSegue", sender: nil)
-//        }))
-    }
+        let alert = UIAlertController(title: "", message: "Cadastro realizado com sucesso!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { action in
+            self.performSegue(withIdentifier: "cadastrarHomeSegue", sender: nil)
+        }))
+        
+        self.present(alert, animated: true, completion:nil)
+          }
     
     func insertDogFalhou(erro: String) {
         print(erro)
@@ -55,10 +53,10 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
      O número 4 é porque tem 4 células (imagem, nome, cor e cadastrar)
      */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
 
-    @IBAction func cadastarAction(_ sender: UIButton) {
+   func cadastarAction() {
        
         if nome.text != "" && cor.text != "" {
         
@@ -66,8 +64,7 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
             dog.id = ""
             dog.name = nome.text!
             dog.color = cor.text!
-            
-            print("Dog: nome \(dog.name) e cor \(dog.color)")
+
             insert.insertDog(dog: dog)
         } else {
             
@@ -88,7 +85,6 @@ class CadastrarTableViewController: UITableViewController, InsertDogPresenterDel
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination as! HomeViewController
-
     }
     
 

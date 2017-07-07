@@ -34,13 +34,11 @@ class InsertDog: NSObject, JsonLoaderDelegate {
         // a ordem dos parâmetros é relevante
         var param = [String]()
         if !dog.id.isEmpty {
-            print("🐮 Chegou no InsertDog para atualização")
             // atualiza Dog
             param = [dog.id, dog.name, dog.color]
             // Faz a requisição para a classe JsonLoader que chama o webservice
             loader.carregarConteudoDaUrl(url: urlUpdate, parameters: param, method: .post)
         } else {
-            print("🐮 Chegou no InsertDog para criação")
             // cria Dog
             param = [dog.name, dog.color]
             // Faz a requisição para a classe JsonLoader que chama o webservice

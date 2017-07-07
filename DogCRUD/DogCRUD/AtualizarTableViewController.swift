@@ -20,19 +20,16 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
     var atualizar: InsertDog = InsertDog()
     
     // MARK: - Funções
-//    override func viewDidLoad() {
-//        //super.viewDidLoad()
-//        print("🐝🐝 Dog de atualização: \(dog.id)")
-//        nome.text = dog.name
-//        cor.text = dog.color
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(atualizarAction))
+        atualizar.delegate = self
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         nome.text = dog.name
         cor.text = dog.color
     }
-    
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,16 +37,17 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
 
     // MARK: - Funções do JsonLoader
     func insertDogConcluido() {
-        print("Atualização do dog concluido")
-        //        let alert = UIAlertController(title: "", message: "Cadastro realizado com sucesso!", preferredStyle: .actionSheet)
-        //        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { action in
-        //            self.performSegue(withIdentifier: "cadastrarHomeSegue", sender: nil)
-        //        }))
+        let alert = UIAlertController(title: "", message: "Atualização realizada com sucesso!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { action in
+            self.performSegue(withIdentifier: "atualizarHomeSegue", sender: nil)
+        }))
+        
+        self.present(alert, animated: true, completion:nil)
     }
     
     func insertDogFalhou(erro: String) {
@@ -57,7 +55,7 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
     }
     
     // MARK: - Ações de botões
-    @IBAction func atualizarAction(_ sender: UIButton) {
+    func atualizarAction() {
         if nome.text != "" && cor.text != "" {
             let dogAtualizacao = Dog()
             dogAtualizacao.id = String(dog.id)
@@ -77,7 +75,6 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
                 cor.textColor = UIColor.red
             }
         }
-
     }
 
     
