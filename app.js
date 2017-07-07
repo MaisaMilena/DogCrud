@@ -25,17 +25,17 @@ app.get('/dogs', (req, res, err) => {
 })
 
 // Chamada para insert em Dog via POST
-app.post('/dogs', (req, res, err) => {
+app.post('/dogs/insert', (req, res, err) => {
 
 	var dog = req.body
-	database.insertDog(dog, (err) => {
+		database.insertDog(dog, (err) => {
 			if (!err) {
 				res.status(200)
 				res.send('Dog registrado com sucesso!')
 			} else {
 				res.status(400).json('Invalid insertion: '+ err)
 			}
-	})
+		})
 
 })
 
@@ -54,9 +54,9 @@ app.delete('/dogs/delete', (req, res, err) => {
 
 
 // Chamada para atualizar um Dog via POST
-app.post('/dogs', (req, res, err) => {
+app.post('/dogs/update', (req, res, err) => {
 
-	var dog = req.query
+	var dog = req.body
 	database.updateDogById(dog, (err) => {
 		if(!err) {
 			res.send('Doguinho de id '+dog.id+' atualizado')

@@ -16,7 +16,8 @@ protocol InsertDogPresenterDelegate {
 
 class InsertDog: NSObject, JsonLoaderDelegate {
 
-    var url = "http://localhost:3000/dogs/insert?"
+    let urlInsert = "http://localhost:3000/dogs/insert?"
+    let urlUpdate = "http://localhost:3000/dogs/update?"
     
     // MARK: - Variável de delegate
     var delegate: InsertDogPresenterDelegate?
@@ -31,9 +32,20 @@ class InsertDog: NSObject, JsonLoaderDelegate {
 
     public func insertDog(dog: Dog){
         // a ordem dos parâmetros é relevante
-        let param = [dog.name, dog.color]
-        // Faz a requisição para a classe JsonLoader que chama o webservice
-        loader.carregarConteudoDaUrl(url: url, parameters: param, method: .post)
+        var param = [String]()
+        if !dog.id.isEmpty {
+            print("🐮 Chegou no InsertDog para atualização")
+            // atualiza Dog
+            param = [dog.id, dog.name, dog.color]
+            // Faz a requisição para a classe JsonLoader que chama o webservice
+            loader.carregarConteudoDaUrl(url: urlUpdate, parameters: param, method: .post)
+        } else {
+            print("🐮 Chegou no InsertDog para criação")
+            // cria Dog
+            param = [dog.name, dog.color]
+            // Faz a requisição para a classe JsonLoader que chama o webservice
+            loader.carregarConteudoDaUrl(url: urlInsert, parameters: param, method: .post)
+        }    
     }
     
     // MARK: - Funções do JsonLoader

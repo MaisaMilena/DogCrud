@@ -65,7 +65,7 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
             dogAtualizacao.name = nome.text!
             dogAtualizacao.color = nome.text!
             
-            print("Dog: nome \(dogAtualizacao.name) e cor \(dogAtualizacao.color)")
+            print("Dog: id: \(dogAtualizacao.id) nome \(dogAtualizacao.name) e cor \(dogAtualizacao.color)")
             atualizar.insertDog(dog: dogAtualizacao)
         } else {
             

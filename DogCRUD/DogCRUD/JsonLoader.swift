@@ -79,17 +79,18 @@ class JsonLoader: NSObject {
     private func postDog(url: String, parameters: [String]){
         // a ordem dos parâmetros é relevante
         var param: Parameters
-        
-        if parameters.contains("id"){
+        print("🐌 os params são: \(parameters.description)")
+        if parameters.count == 3{
+            print("🎷Entrou no Json Loader para atualização")
             param = ["id":parameters[0],"name":parameters[1], "color":parameters[2]]
         } else {
+            print("🎷Entrou no Json Loader para criação")
             param = ["name":parameters[0], "color":parameters[1]]
         }
         
-        
         Alamofire.request(url, method: .post, parameters: param, encoding: URLEncoding.httpBody, headers: nil).responseJSON{
             (response) in
-            
+            print("🤖 está no request e os param são: ")
             switch response.result {
             case .success:
                 self.delegate?.loaderJsonConcluido(arrayDicionario: [])
