@@ -190,9 +190,6 @@
                                         <constraint firstAttribute="bottom" secondItem="Erh-Nb-XbM" secondAttribute="bottom" id="uPw-V7-06g"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="owG-vc-vwW" kind="show" identifier="listarAtualizarSegue" id="jJ2-gK-cp6"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -202,6 +199,7 @@
                     </tableView>
                     <connections>
                         <outlet property="listaDeDogs" destination="jCs-JT-Ipc" id="ML8-NS-GB4"/>
+                        <segue destination="owG-vc-vwW" kind="show" identifier="listarAtualizarSegue" id="XsK-Jc-Dbg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAw-0X-vqo" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -28,7 +28,6 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
 //    }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("🐝🐝 Dog de atualização: \(dog.id)")
         nome.text = dog.name
         cor.text = dog.color
     }
@@ -63,9 +62,8 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
             let dogAtualizacao = Dog()
             dogAtualizacao.id = String(dog.id)
             dogAtualizacao.name = nome.text!
-            dogAtualizacao.color = nome.text!
+            dogAtualizacao.color = cor.text!
             
-            print("Dog: id: \(dogAtualizacao.id) nome \(dogAtualizacao.name) e cor \(dogAtualizacao.color)")
             atualizar.insertDog(dog: dogAtualizacao)
         } else {
             

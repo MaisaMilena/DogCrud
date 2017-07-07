@@ -88,7 +88,7 @@ class JsonLoader: NSObject {
             param = ["name":parameters[0], "color":parameters[1]]
         }
         
-        Alamofire.request(url, method: .post, parameters: param, encoding: URLEncoding.httpBody, headers: nil).responseJSON{
+        Alamofire.request(url, method: .post, parameters: param, encoding: URLEncoding.httpBody, headers: nil).responseString{
             (response) in
             print("🤖 está no request e os param são: ")
             switch response.result {
