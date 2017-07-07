@@ -16,8 +16,8 @@ protocol InsertDogPresenterDelegate {
 
 class InsertDog: NSObject, JsonLoaderDelegate {
 
-    let urlInsert = "http://localhost:3000/dogs/insert?"
-    let urlUpdate = "http://localhost:3000/dogs/update?"
+    let urlInsert = "http://18.231.84.7:3000/dogs/insert?"
+    let urlUpdate = "http://18.231.84.7:3000/dogs/update?"
     
     // MARK: - Variável de delegate
     var delegate: InsertDogPresenterDelegate?

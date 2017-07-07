@@ -15,7 +15,7 @@ protocol LoadDogPresenterDelegate{
 
 class DogPresenter: NSObject, JsonLoaderDelegate {
     
-    let url = "http://localhost:3000/dogs"
+    let url = "http://18.231.84.7:3000/dogs"
     
     // MARK: - Variável de delegate
     var delegate: LoadDogPresenterDelegate?

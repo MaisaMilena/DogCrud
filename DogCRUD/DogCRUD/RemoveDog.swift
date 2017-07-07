@@ -16,7 +16,7 @@ protocol RemoveDogPresenterDelegate {
 
 class RemoveDog: NSObject, JsonLoaderDelegate {
     
-    var url = "http://localhost:3000/dogs/delete?"
+    var url = "http://18.231.84.7:3000/dogs/delete?"
     
         // MARK: - Variável de delegate
     var delegate: RemoveDogPresenterDelegate?
