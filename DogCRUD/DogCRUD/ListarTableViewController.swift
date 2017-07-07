@@ -18,7 +18,7 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
     var loader: DogPresenter?
     var delete: RemoveDog?
     
-    var idDogAtualizacao = 0
+    var dogAtualizacao = Dog()
     
     // MARK: - Funções
     override func viewDidLoad() {
@@ -109,11 +109,17 @@ class ListarTableViewController: UITableViewController, LoadDogPresenterDelegate
         } 
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dogAtualizacao = dogs[indexPath.row]
+        performSegue(withIdentifier: "listarAtualizarSegue", sender: nil)
+    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let proximaView = segue.destination as! AtualizarTableViewController
-        proximaView.idDog = idDogAtualizacao
+        proximaView.dog = dogAtualizacao
+        
+        print("🐝 Dog de atualização: \(dogAtualizacao.id)")
     }
     
 

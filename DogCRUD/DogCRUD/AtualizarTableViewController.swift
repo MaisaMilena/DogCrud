@@ -10,22 +10,30 @@ import UIKit
 
 class AtualizarTableViewController: UITableViewController, InsertDogPresenterDelegate {
     
-    var idDog: Int!
+    var dog = Dog()
     
     // MARK: - IBOutlets
-
     @IBOutlet weak var nome: UITextField!
     @IBOutlet weak var cor: UITextField!
-    @IBOutlet weak var atualizarButton: UIButton!
 
-    
     // MARK: - Presenter
     var atualizar: InsertDog = InsertDog()
     
     // MARK: - Funções
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//    override func viewDidLoad() {
+//        //super.viewDidLoad()
+//        print("🐝🐝 Dog de atualização: \(dog.id)")
+//        nome.text = dog.name
+//        cor.text = dog.color
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("🐝🐝 Dog de atualização: \(dog.id)")
+        nome.text = dog.name
+        cor.text = dog.color
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,15 +59,14 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
     
     // MARK: - Ações de botões
     @IBAction func atualizarAction(_ sender: UIButton) {
-        
         if nome.text != "" && cor.text != "" {
-            let dog = Dog()
-            dog.id = String(idDog)
-            dog.name = nome.text!
-            dog.color = nome.text!
+            let dogAtualizacao = Dog()
+            dogAtualizacao.id = String(dog.id)
+            dogAtualizacao.name = nome.text!
+            dogAtualizacao.color = nome.text!
             
-            print("Dog: nome \(dog.name) e cor \(dog.color)")
-            atualizar.insertDog(dog: dog)
+            print("Dog: nome \(dogAtualizacao.name) e cor \(dogAtualizacao.color)")
+            atualizar.insertDog(dog: dogAtualizacao)
         } else {
             
             if nome.text == "" {
@@ -72,8 +79,9 @@ class AtualizarTableViewController: UITableViewController, InsertDogPresenterDel
                 cor.textColor = UIColor.red
             }
         }
- 
+
     }
+
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
