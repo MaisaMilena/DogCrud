@@ -12,11 +12,13 @@ protocol InsertDogPresenterDelegate {
     func insertDogConcluido()
     func insertDogFalhou(erro: String)
 }
-
-
+/**
+    Classe responsável pela inserção e atualização de Dogs
+ */
 class InsertDog: NSObject, JsonLoaderDelegate {
-
+    /// URL no servidor para inserir novos registros
     let urlInsert = "http://18.231.84.7:3000/dogs/insert?"
+    /// URL no servidor para atualizar um registro já existente
     let urlUpdate = "http://18.231.84.7:3000/dogs/update?"
     
     // MARK: - Variável de delegate
@@ -29,7 +31,10 @@ class InsertDog: NSObject, JsonLoaderDelegate {
         super.init()
         loader.delegate = self
     }
-
+    /**
+     Função chamada na ViewController para fazer a inserção ou atualização de um Dog
+     - parameter dog: instância de Dog que será enviado ao servido
+     */
     public func insertDog(dog: Dog){
         // a ordem dos parâmetros é relevante
         var param = [String]()

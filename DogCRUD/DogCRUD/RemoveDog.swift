@@ -13,12 +13,14 @@ protocol RemoveDogPresenterDelegate {
     func removeDogFalhou(erro: String)
     
 }
-
+/**
+    Classe responsável por fazer a chamada no servidor para que remova um determinado Dog
+ */
 class RemoveDog: NSObject, JsonLoaderDelegate {
-    
+    /// URL no servidor para solicitar a remoção de um Dog
     var url = "http://18.231.84.7:3000/dogs/delete?"
     
-        // MARK: - Variável de delegate
+    // MARK: - Variável de delegate
     var delegate: RemoveDogPresenterDelegate?
     let loader: JsonLoader = JsonLoader()
     
@@ -30,8 +32,12 @@ class RemoveDog: NSObject, JsonLoaderDelegate {
 
     }
     
+    /**
+     Função chamada na ViewController para acionar a remoção do Dog
+     - parameter id: id do Dog que será removido
+     */
     public func removeDog(id: String){
-        
+        // passa o id do Dog na URL de requisição no servidor
         url.append(id)
         
         //print("🦋 Url de requisição: \(url)")

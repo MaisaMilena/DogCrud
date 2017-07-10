@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+    Modelo para representar Dog, está de acordo com que existe no servidor
+ */
 class Dog: NSObject {
     
     var id: String = ""
