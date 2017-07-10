@@ -11,22 +11,29 @@ import Alamofire
 
 //Delegate protocol
 protocol JsonLoaderDelegate{
-    /**
-     Passar esse método adiante significa sucesso
-     */
+
+    /// Passar esse método adiante significa sucesso
     func loaderJsonConcluido(arrayDicionario: [NSDictionary])
     
-    /**
-     Repassar a mensagem de erro adiante
-     */
+    /// Repassar a mensagem de erro adiante
     func loaderJsonFalhou(mensagem: String)
 }
 
+/**
+ Classe responsável por realizar a ponte entre a aplicação e o servidor. Toda a comunicação das classes com a JsonLoader é feita através no método "carregarConteudoDaUrl"
+ */
 class JsonLoader: NSObject {
     
     //MARK:- Delegate
     var delegate :JsonLoaderDelegate?
     
+    /**
+     Responsável por receber a url e parâmetros da requisição e submetê-la ao servidor, em seguida, receber a resposta para o servido e tratá-la de forma adequada 
+     - parameters:
+        - url: endereço no servidor para o qual será feita a requisição. Ex: http://10.9.9.0/dogs
+        - parameters: parâmetros que serão passados na url.
+        - method: indica qual o método de requisição, pode ser get, post ou delete
+     */
     public func carregarConteudoDaUrl(url:String, parameters: [String], method: HTTPMethod){
    
         switch method {

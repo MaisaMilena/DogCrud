@@ -1,0 +1,656 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 17,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 22,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 27,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 32,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 36,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AppDelegate.swift",
+      "line": 40,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 11,
+      "symbol": "AtualizarTableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 13,
+      "symbol": "AtualizarTableViewController.dog",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 16,
+      "symbol": "AtualizarTableViewController.nome",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 17,
+      "symbol": "AtualizarTableViewController.cor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 20,
+      "symbol": "AtualizarTableViewController.atualizar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 23,
+      "symbol": "AtualizarTableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 29,
+      "symbol": "AtualizarTableViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 34,
+      "symbol": "AtualizarTableViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 39,
+      "symbol": "AtualizarTableViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 44,
+      "symbol": "AtualizarTableViewController.insertDogConcluido()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 53,
+      "symbol": "AtualizarTableViewController.insertDogFalhou(erro:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 58,
+      "symbol": "AtualizarTableViewController.atualizarAction()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/AtualizarTableViewController.swift",
+      "line": 82,
+      "symbol": "AtualizarTableViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 11,
+      "symbol": "CadastrarTableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 14,
+      "symbol": "CadastrarTableViewController.nome",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 15,
+      "symbol": "CadastrarTableViewController.cor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 18,
+      "symbol": "CadastrarTableViewController.insert",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 21,
+      "symbol": "CadastrarTableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 30,
+      "symbol": "CadastrarTableViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 35,
+      "symbol": "CadastrarTableViewController.insertDogConcluido()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 44,
+      "symbol": "CadastrarTableViewController.insertDogFalhou(erro:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 55,
+      "symbol": "CadastrarTableViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 59,
+      "symbol": "CadastrarTableViewController.cadastarAction()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/CadastrarTableViewController.swift",
+      "line": 86,
+      "symbol": "CadastrarTableViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
+      "line": 11,
+      "symbol": "Dog",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
+      "line": 13,
+      "symbol": "Dog.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
+      "line": 14,
+      "symbol": "Dog.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
+      "line": 15,
+      "symbol": "Dog.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 11,
+      "symbol": "LoadDogPresenterDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 12,
+      "symbol": "LoadDogPresenterDelegate.loadDogsConcluido(dogs:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 13,
+      "symbol": "LoadDogPresenterDelegate.loadDogsFalhou(mensagem:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 16,
+      "symbol": "DogPresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 18,
+      "symbol": "DogPresenter.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 21,
+      "symbol": "DogPresenter.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 22,
+      "symbol": "DogPresenter.loader",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
+      "line": 25,
+      "symbol": "DogPresenter.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 11,
+      "symbol": "HomeViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 13,
+      "symbol": "HomeViewController.listarButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 14,
+      "symbol": "HomeViewController.cadastrarButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 16,
+      "symbol": "HomeViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 24,
+      "symbol": "HomeViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 28,
+      "symbol": "HomeViewController.listarAction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 32,
+      "symbol": "HomeViewController.cadastrarAction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/HomeViewController.swift",
+      "line": 38,
+      "symbol": "HomeViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 11,
+      "symbol": "InsertDogPresenterDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 12,
+      "symbol": "InsertDogPresenterDelegate.insertDogConcluido()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 13,
+      "symbol": "InsertDogPresenterDelegate.insertDogFalhou(erro:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 17,
+      "symbol": "InsertDog",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 19,
+      "symbol": "InsertDog.urlInsert",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 20,
+      "symbol": "InsertDog.urlUpdate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 23,
+      "symbol": "InsertDog.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 24,
+      "symbol": "InsertDog.loader",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 27,
+      "symbol": "InsertDog.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
+      "line": 33,
+      "symbol": "InsertDog.insertDog(dog:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
+      "line": 13,
+      "symbol": "JsonLoaderDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
+      "line": 25,
+      "symbol": "JsonLoader",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
+      "line": 28,
+      "symbol": "JsonLoader.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
+      "line": 30,
+      "symbol": "JsonLoader.carregarConteudoDaUrl(url:parameters:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
+      "line": 47,
+      "symbol": "JsonLoader.getDogs(url:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": null,
+      "symbol": "ListarTableViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 11,
+      "symbol": "ListarTableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 13,
+      "symbol": "ListarTableViewController.dogs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 15,
+      "symbol": "ListarTableViewController.listaDeDogs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 18,
+      "symbol": "ListarTableViewController.loader",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 19,
+      "symbol": "ListarTableViewController.delete",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 21,
+      "symbol": "ListarTableViewController.dogAtualizacao",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 24,
+      "symbol": "ListarTableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 36,
+      "symbol": "ListarTableViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 59,
+      "symbol": "ListarTableViewController.loadDogsFalhou(mensagem:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 65,
+      "symbol": "ListarTableViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 70,
+      "symbol": "ListarTableViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 94,
+      "symbol": "ListarTableViewController.tableView(_:canEditRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 98,
+      "symbol": "ListarTableViewController.tableView(_:commit:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 112,
+      "symbol": "ListarTableViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 118,
+      "symbol": "ListarTableViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
+      "line": 137,
+      "symbol": "ListarTableViewController.removeDogFalhou(erro:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 11,
+      "symbol": "RemoveDogPresenterDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 12,
+      "symbol": "RemoveDogPresenterDelegate.removeDogConcluido()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 13,
+      "symbol": "RemoveDogPresenterDelegate.removeDogFalhou(erro:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 17,
+      "symbol": "RemoveDog",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 19,
+      "symbol": "RemoveDog.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 22,
+      "symbol": "RemoveDog.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 23,
+      "symbol": "RemoveDog.loader",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 26,
+      "symbol": "RemoveDog.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
+      "line": 33,
+      "symbol": "RemoveDog.removeDog(id:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD"
+}
