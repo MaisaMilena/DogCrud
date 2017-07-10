@@ -226,28 +226,21 @@
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
-      "line": 11,
-      "symbol": "Dog",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
-      "line": 13,
+      "line": 16,
       "symbol": "Dog.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
-      "line": 14,
+      "line": 17,
       "symbol": "Dog.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/Dog.swift",
-      "line": 15,
+      "line": 18,
       "symbol": "Dog.color",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -261,49 +254,21 @@
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 12,
-      "symbol": "LoadDogPresenterDelegate.loadDogsConcluido(dogs:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 13,
-      "symbol": "LoadDogPresenterDelegate.loadDogsFalhou(mensagem:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 16,
-      "symbol": "DogPresenter",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 18,
-      "symbol": "DogPresenter.url",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 21,
+      "line": 25,
       "symbol": "DogPresenter.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 22,
+      "line": 26,
       "symbol": "DogPresenter.loader",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/DogPresenter.swift",
-      "line": 25,
+      "line": 29,
       "symbol": "DogPresenter.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -387,50 +352,22 @@
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 17,
-      "symbol": "InsertDog",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 19,
-      "symbol": "InsertDog.urlInsert",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 20,
-      "symbol": "InsertDog.urlUpdate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 23,
+      "line": 25,
       "symbol": "InsertDog.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 24,
+      "line": 26,
       "symbol": "InsertDog.loader",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 27,
+      "line": 29,
       "symbol": "InsertDog.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/InsertDog.swift",
-      "line": 33,
-      "symbol": "InsertDog.insertDog(dog:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -443,13 +380,6 @@
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
-      "line": 25,
-      "symbol": "JsonLoader",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
       "line": 28,
       "symbol": "JsonLoader.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -457,14 +387,7 @@
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
-      "line": 30,
-      "symbol": "JsonLoader.carregarConteudoDaUrl(url:parameters:method:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/JsonLoader.swift",
-      "line": 47,
+      "line": 54,
       "symbol": "JsonLoader.getDogs(url:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -529,13 +452,6 @@
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
       "line": 36,
       "symbol": "ListarTableViewController.didReceiveMemoryWarning()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/ListarTableViewController.swift",
-      "line": 59,
-      "symbol": "ListarTableViewController.loadDogsFalhou(mensagem:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -611,43 +527,22 @@
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
-      "line": 17,
-      "symbol": "RemoveDog",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
-      "line": 19,
-      "symbol": "RemoveDog.url",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "RemoveDog.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
-      "line": 23,
+      "line": 25,
       "symbol": "RemoveDog.loader",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
-      "line": 26,
+      "line": 28,
       "symbol": "RemoveDog.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/maisamilena/Documents/Repositórios/NodeJS/DogCRUD/DogCRUD/RemoveDog.swift",
-      "line": 33,
-      "symbol": "RemoveDog.removeDog(id:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }

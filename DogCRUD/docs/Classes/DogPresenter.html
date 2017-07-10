@@ -14,7 +14,7 @@
     <a title="DogPresenter Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (12% documented)</p>
+        <p><a href="../index.html"> Docs</a> (26% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -85,7 +85,13 @@
         <section>
           <section class="section">
             <h1>DogPresenter</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">DogPresenter</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/JsonLoaderDelegate.html">JsonLoaderDelegate</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Classe responsável pelo recebimento dos dados em formato Json e transformação para um Array de Dogs, possibilitanto que a ViewController use esses dados</p>
 
           </section>
           <section class="section task-group-section">
@@ -104,8 +110,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>URL no servidor para receber dados sobre todos os dogs</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="s">"http://18.231.84.7:3000/dogs"</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -137,6 +151,14 @@
                         <p>Undocumented</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">DogPresenter</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/JsonLoaderDelegate.html">JsonLoaderDelegate</a></span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -155,6 +177,14 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">DogPresenter</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/JsonLoaderDelegate.html">JsonLoaderDelegate</a></span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -185,6 +215,14 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">DogPresenter</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/JsonLoaderDelegate.html">JsonLoaderDelegate</a></span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -276,11 +314,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Responsável pelo tratamento adequado dos dados vindos do servidor</p>
-
-<ul>
-<li>param : array de dicionario de Dog</li>
-</ul>
+                        <p>Responsável pelo tratamento adequado dos dados vindos do servidor. Recebe um array de dicionário (formato JSON) e transforma-os em um array de dog</p>
 
                       </div>
                       <div class="declaration">
@@ -290,6 +324,29 @@
                           <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">tratarJson</span><span class="p">(</span><span class="nv">arrayDicionario</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSDictionary</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Dog.html">Dog</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arrayDicionario</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>array de dicionario com dados sobre Dog</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>array de objetos Dog</p>
                       </div>
                     </section>
                   </div>

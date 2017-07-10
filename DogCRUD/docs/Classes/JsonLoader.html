@@ -14,7 +14,7 @@
     <a title="JsonLoader Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (12% documented)</p>
+        <p><a href="../index.html"> Docs</a> (26% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -85,7 +85,13 @@
         <section>
           <section class="section">
             <h1>JsonLoader</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">JsonLoader</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Classe responsável por realizar a ponte entre a aplicação e o servidor. Toda a comunicação das classes com a JsonLoader é feita através no método <q>carregarConteudoDaUrl</q></p>
 
           </section>
           <section class="section task-group-section">
@@ -114,6 +120,14 @@
                         <p>Undocumented</p>
 
                       </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">JsonLoader</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -130,8 +144,62 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Responsável por receber a url e parâmetros da requisição e submetê-la ao servidor, em seguida, receber a resposta para o servido e tratá-la de forma adequada </p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">carregarConteudoDaUrl</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">HTTPMethod</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>endereço no servidor para o qual será feita a requisição. Ex: <a href="http://10.9.9.0/dogs">http://10.9.9.0/dogs</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><ul>
+<li>url: endereço no servidor para o qual será feita a requisição. Ex: <a href="http://10.9.9.0/dogs">http://10.9.9.0/dogs</a></li>
+<li>method: indica qual o método de requisição, pode ser get, post ou delete</li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indica qual o método de requisição, pode ser get, post ou delete</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -151,6 +219,14 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">JsonLoader</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
