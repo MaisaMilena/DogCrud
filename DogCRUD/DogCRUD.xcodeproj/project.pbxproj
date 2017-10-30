@@ -24,7 +24,21 @@
 		C2B0DE891F0C163300DF9983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B0DE881F0C163300DF9983 /* Assets.xcassets */; };
 		C2B0DE8C1F0C163300DF9983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B0DE8A1F0C163300DF9983 /* LaunchScreen.storyboard */; };
 		C2B0DE951F0C2E7800DF9983 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0DE941F0C2E7800DF9983 /* Dog.swift */; };
+		EC835FBA1FA65E880032AB73 /* DogCRUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC835FB91FA65E880032AB73 /* DogCRUDUITests.swift */; };
+		EC835FC21FA65FD40032AB73 /* TelaInicialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC835FC11FA65FD40032AB73 /* TelaInicialUITests.swift */; };
+		EC835FC41FA6686E0032AB73 /* TelaCadastroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC835FC31FA6686E0032AB73 /* TelaCadastroUITests.swift */; };
+		EC835FC61FA671380032AB73 /* TelaListagemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC835FC51FA671380032AB73 /* TelaListagemUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC835FBC1FA65E880032AB73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2B0DE761F0C163300DF9983 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B0DE7D1F0C163300DF9983;
+			remoteInfo = DogCRUD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7856423543AACCA752504FB0 /* Pods_DogCRUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogCRUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +62,12 @@
 		C2B0DE8B1F0C163300DF9983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2B0DE8D1F0C163300DF9983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2B0DE941F0C2E7800DF9983 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		EC835FB71FA65E880032AB73 /* DogCRUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogCRUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC835FB91FA65E880032AB73 /* DogCRUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCRUDUITests.swift; sourceTree = "<group>"; };
+		EC835FBB1FA65E880032AB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC835FC11FA65FD40032AB73 /* TelaInicialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialUITests.swift; sourceTree = "<group>"; };
+		EC835FC31FA6686E0032AB73 /* TelaCadastroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCadastroUITests.swift; sourceTree = "<group>"; };
+		EC835FC51FA671380032AB73 /* TelaListagemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaListagemUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1FB863E85E5BD6A568CC997 /* Pods_DogCRUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC835FB41FA65E880032AB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C2B0DE801F0C163300DF9983 /* DogCRUD */,
+				EC835FB81FA65E880032AB73 /* DogCRUDUITests */,
 				C2B0DE7F1F0C163300DF9983 /* Products */,
 				9E795614DC381F5CBD134033 /* Pods */,
 				FD623F83A67DBC4122552FE7 /* Frameworks */,
@@ -122,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C2B0DE7E1F0C163300DF9983 /* DogCRUD.app */,
+				EC835FB71FA65E880032AB73 /* DogCRUDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +190,18 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		EC835FB81FA65E880032AB73 /* DogCRUDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC835FB91FA65E880032AB73 /* DogCRUDUITests.swift */,
+				EC835FBB1FA65E880032AB73 /* Info.plist */,
+				EC835FC11FA65FD40032AB73 /* TelaInicialUITests.swift */,
+				EC835FC31FA6686E0032AB73 /* TelaCadastroUITests.swift */,
+				EC835FC51FA671380032AB73 /* TelaListagemUITests.swift */,
+			);
+			path = DogCRUDUITests;
+			sourceTree = "<group>";
+		};
 		FD623F83A67DBC4122552FE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,13 +233,31 @@
 			productReference = C2B0DE7E1F0C163300DF9983 /* DogCRUD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EC835FB61FA65E880032AB73 /* DogCRUDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC835FC01FA65E880032AB73 /* Build configuration list for PBXNativeTarget "DogCRUDUITests" */;
+			buildPhases = (
+				EC835FB31FA65E880032AB73 /* Sources */,
+				EC835FB41FA65E880032AB73 /* Frameworks */,
+				EC835FB51FA65E880032AB73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC835FBD1FA65E880032AB73 /* PBXTargetDependency */,
+			);
+			name = DogCRUDUITests;
+			productName = DogCRUDUITests;
+			productReference = EC835FB71FA65E880032AB73 /* DogCRUDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C2B0DE761F0C163300DF9983 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = BEPiD;
 				TargetAttributes = {
@@ -206,6 +265,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B33RKQE9R2;
 						ProvisioningStyle = Automatic;
+					};
+					EC835FB61FA65E880032AB73 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2B0DE7D1F0C163300DF9983;
 					};
 				};
 			};
@@ -223,6 +287,7 @@
 			projectRoot = "";
 			targets = (
 				C2B0DE7D1F0C163300DF9983 /* DogCRUD */,
+				EC835FB61FA65E880032AB73 /* DogCRUDUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +303,13 @@
 				C2B0DE871F0C163300DF9983 /* Main.storyboard in Resources */,
 				C21117401F0D2AA800CA7E24 /* Doge.png in Resources */,
 				C21117421F0D2B7300CA7E24 /* DogeWallpaper.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC835FB51FA65E880032AB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +381,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC835FB31FA65E880032AB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC835FBA1FA65E880032AB73 /* DogCRUDUITests.swift in Sources */,
+				EC835FC61FA671380032AB73 /* TelaListagemUITests.swift in Sources */,
+				EC835FC41FA6686E0032AB73 /* TelaCadastroUITests.swift in Sources */,
+				EC835FC21FA65FD40032AB73 /* TelaInicialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC835FBD1FA65E880032AB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B0DE7D1F0C163300DF9983 /* DogCRUD */;
+			targetProxy = EC835FBC1FA65E880032AB73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C2B0DE851F0C163300DF9983 /* Main.storyboard */ = {
@@ -454,6 +545,58 @@
 			};
 			name = Release;
 		};
+		EC835FBE1FA65E880032AB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DogCRUDUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.italosjobom.DogCRUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DogCRUD;
+			};
+			name = Debug;
+		};
+		EC835FBF1FA65E880032AB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DogCRUDUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.italosjobom.DogCRUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DogCRUD;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +614,15 @@
 			buildConfigurations = (
 				C2B0DE911F0C163300DF9983 /* Debug */,
 				C2B0DE921F0C163300DF9983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC835FC01FA65E880032AB73 /* Build configuration list for PBXNativeTarget "DogCRUDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC835FBE1FA65E880032AB73 /* Debug */,
+				EC835FBF1FA65E880032AB73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
